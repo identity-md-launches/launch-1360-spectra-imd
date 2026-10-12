@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "SpectraToken",
+    "name": "Spectra IMD",
+    "symbol": "SPECTRA",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "10000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 8000,
+    "initialMarketCapWei": "2500000000000000000000",
+    "remainderTo": "0x6bf192ebef135e0f645e99d59d9bf44e7711606c"
+  },
+  "notes": "SpectraToken is a fixed-supply ERC-20 (OpenZeppelin Contracts v5.1.0) named Spectra IMD, symbol SPECTRA, 18 decimals. Its constructor takes no arguments and mints the whole supply of 10,000,000 SPECTRA (10000000000000000000000000 minor units) once to msg.sender, which is the factory at launch. There is no owner, minter, pause, blacklist, transfer tax, burn, rebase, upgrade or other privileged function; every holder, the factory included, follows plain ERC-20 transfer and allowance rules, so the swarm's share, the single-sided seed and swaps through the PoolManager each move exactly what they say. No application contracts are deployed and no initialization calls are needed. The pool pairs with IMD at 0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7 at the launch policy's 1.25% fee; initialPrice is provenance only and the deployer derives the opening price from economics.initialMarketCapWei and totalSupply."
+}
